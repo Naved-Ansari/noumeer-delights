@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Noumeer Delights — Brownie Tips, Dessert Guides & Baking Secrets</title>
+  <meta name="description"
+    content="Read Noumeer Delights' baking blog — expert tips on storing brownies, dessert pairing guides, and the difference between brownies and cake bowls. Mumbai's favourite cloud kitchen.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.noumeer.com/blog.html">
+  <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+
+  <meta property="og:title" content="Noumeer Delights Blog — Sweet Tips & Dessert Guides">
+  <meta property="og:description"
+    content="Expert brownie tips, chocolate dessert pairing guides, and baking secrets from Mumbai's favourite cloud kitchen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.noumeer.com/blog.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .blog-listing-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .blog-main-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .blog-list-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      gap: 0;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition);
+    }
+
+    .blog-list-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent);
+    }
+
+    .blog-list-img {
+      width: 220px;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-list-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+      transition: transform 0.6s ease;
+    }
+
+    .blog-list-card:hover .blog-list-img img {
+      transform: scale(1.07);
+    }
+
+    .blog-list-img .blog-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .blog-list-body {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .blog-list-body .blog-date {
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-list-body h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+
+    .blog-list-body p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .blog-list-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: auto;
+    }
+
+    .read-time {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* Sidebar */
+    .blog-sidebar {
+      position: sticky;
+      top: 120px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .sidebar-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 1.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .sidebar-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--accent-muted);
+    }
+
+    .sidebar-post {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: opacity var(--transition);
+    }
+
+    .sidebar-post:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-post:hover {
+      opacity: 0.8;
+    }
+
+    .sidebar-post img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .sidebar-post-text a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--primary);
+      line-height: 1.4;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .sidebar-post-text span {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag-pill {
+      padding: 0.35rem 0.85rem;
+      border-radius: 50px;
+      background: var(--accent-muted);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      transition: all var(--transition);
+      cursor: default;
+    }
+
+    .tag-pill:hover {
+      background: var(--primary);
+      color: var(--bg-color);
+    }
+
+    @media (max-width: 900px) {
+      .blog-listing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-sidebar {
+        position: static;
+      }
+
+      .blog-list-card {
+        flex-direction: column;
+      }
+
+      .blog-list-img {
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="scroll-progress"></div>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <i class="fas fa-cookie-bite cookie-icon"></i>
+        <p>We use cookies to enhance your experience and serve ads via Google AdSense. By clicking
+          <strong>Accept</strong>, you consent to our <a href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+      <div class="cookie-actions">
+        <button id="cookie-decline" class="cookie-btn cookie-btn--outline">Decline</button>
+        <button id="cookie-accept" class="cookie-btn cookie-btn--primary">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="main-header">
+    <a href="index.html" class="brand-logo">
+      <img src="assets/images/logo.png" alt="Noumeer Delights Logo" class="logo-img"
+        onerror="this.src='assets/images/logo.png'">
+      <span class="brand-name">Noumeer <em>Delights</em></span>
+    </a>
+    <div class="header-right">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="index.html#why-us">Why Us</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#order" class="nav-cta-btn">Order Now</a></li>
+      </ul>
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Dark/Light Mode"
+          aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle mobile menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <span class="page-hero-tag">From the Kitchen</span>
+    <h1>Baking Tips & <em>Sweet Stories</em></h1>
+    <p>Expert insights on storing brownies, pairing desserts, and everything you need to know about our world of
+      chocolate indulgence.</p>
+  </div>
+
+  <!-- Ad Slot — Leaderboard -->
+  <div class="ad-container ad-leaderboard">
+    <p class="ad-label">Advertisement</p>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"
+      data-ad-format="auto" data-full-width-responsive="true">
+    </ins>
+  </div>
+
+  <!-- Blog Content -->
+  <section class="section" style="padding-top: 4rem;">
+    <div class="blog-listing-grid">
+
+      <!-- Main Articles -->
+      <main class="blog-main-list">
+        <article class="blog-list-card reveal">
+          <div class="blog-list-img">
+            <img src="assets/images/brownie.png" alt="How to keep brownies fresh for days" loading="lazy">
+            <span class="blog-tag">Storage Tips</span>
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-date"><i class="far fa-calendar-alt"></i> March 15, 2026</span>
+            <h2>How to Keep Your Brownies Fresh for Days</h2>
+            <p>Discover the best storage methods for homemade brownies — from airtight containers at room temperature to
+              fridge and freezer techniques. Keep your brownies fudgy and delicious for up to a week without losing a
+              bit of their magic.</p>
+            <div class="blog-list-meta">
+              <a href="blog-1.html" class="blog-read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+              <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- In-content Ad -->
+        <div class="ad-container ad-content" style="border-radius: 16px; margin: 0;">
+          <p class="ad-label">Advertisement</p>
+          <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+            data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX">
+          </ins>
+        </div>
+
+        <article class="blog-list-card reveal">
+          <div class="blog-list-img">
+            <img src="assets/images/lava_cake.png" alt="Brownie vs Cake Bowl — which should you order?" loading="lazy">
+            <span class="blog-tag">Dessert Guide</span>
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-date"><i class="far fa-calendar-alt"></i> March 22, 2026</span>
+            <h2>Brownie vs. Cake Bowl: Which One Should You Order?</h2>
+            <p>Can't decide between a fudgy brownie and a warm molten cake bowl? We break down the key differences in
+              texture, temperature, richness, and occasion-fit to help you pick your perfect indulgence — or order both!
+            </p>
+            <div class="blog-list-meta">
+              <a href="blog-2.html" class="blog-read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+              <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-list-card reveal">
+          <div class="blog-list-img">
+            <img src="assets/images/nutella_brownie.png" alt="The ultimate guide to pairing chocolate desserts"
+              loading="lazy">
+            <span class="blog-tag">Expert Tips</span>
+          </div>
+          <div class="blog-list-body">
+            <span class="blog-date"><i class="far fa-calendar-alt"></i> April 1, 2026</span>
+            <h2>The Ultimate Guide to Pairing Chocolate Desserts</h2>
+            <p>From masala chai to vanilla ice cream, learn the art of pairing brownies and bowl cakes with the right
+              accompaniments for an elevated dessert experience. Practical pairings anyone can try at home, right now.
+            </p>
+            <div class="blog-list-meta">
+              <a href="blog-3.html" class="blog-read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+              <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="blog-sidebar">
+        <!-- Order CTA -->
+        <div class="sidebar-card"
+          style="background: linear-gradient(135deg, var(--primary), #6B4532); border-color: transparent;">
+          <h3 style="color: #fff; border-color: rgba(255,255,255,0.2);">Craving Something Sweet?</h3>
+          <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-bottom: 1.25rem;">Reading about brownies
+            making you hungry? Order fresh right now!</p>
+          <a href="index.html#order" class="btn btn-ghost"
+            style="width: 100%; justify-content: center; border-color: #fff; color: #fff;">
+            <i class="fas fa-shopping-bag"></i> Order Now
+          </a>
+        </div>
+
+        <!-- Recent Posts -->
+        <div class="sidebar-card">
+          <h3>Recent Articles</h3>
+          <div class="sidebar-post">
+            <img src="assets/images/brownie.png" alt="Brownie freshness tips" loading="lazy">
+            <div class="sidebar-post-text">
+              <a href="blog-1.html">How to Keep Brownies Fresh for Days</a>
+              <span><i class="far fa-calendar-alt"></i> March 15, 2026</span>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="assets/images/lava_cake.png" alt="Brownie vs cake bowl" loading="lazy">
+            <div class="sidebar-post-text">
+              <a href="blog-2.html">Brownie vs. Cake Bowl: Which to Order?</a>
+              <span><i class="far fa-calendar-alt"></i> March 22, 2026</span>
+            </div>
+          </div>
+          <div class="sidebar-post">
+            <img src="assets/images/nutella_brownie.png" alt="Chocolate dessert pairing guide" loading="lazy">
+            <div class="sidebar-post-text">
+              <a href="blog-3.html">Ultimate Chocolate Dessert Pairing Guide</a>
+              <span><i class="far fa-calendar-alt"></i> April 1, 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="sidebar-card">
+          <h3>Topics</h3>
+          <div class="tag-cloud">
+            <span class="tag-pill">Storage Tips</span>
+            <span class="tag-pill">Chocolate</span>
+            <span class="tag-pill">Brownies</span>
+            <span class="tag-pill">Bowl Cake</span>
+            <span class="tag-pill">Nutella</span>
+            <span class="tag-pill">Eggless</span>
+            <span class="tag-pill">Gifting</span>
+            <span class="tag-pill">Pairings</span>
+            <span class="tag-pill">Mumbai</span>
+            <span class="tag-pill">Homemade</span>
+          </div>
+        </div>
+
+        <!-- Sidebar Ad -->
+        <div class="sidebar-card" style="padding: 1rem; text-align: center;">
+          <p class="ad-label">Advertisement</p>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true">
+          </ins>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer__top">
+        <div class="footer-col footer-col--brand">
+          <div class="footer__brand">
+            <img src="assets/images/logo.png" alt="Noumeer Delights Logo" class="footer__logo"
+              onerror="this.src='assets/images/logo.png'">
+            <h4>Noumeer Delights</h4>
+          </div>
+          <p class="footer__about">A home-based cloud kitchen dedicated to perfecting artisan brownies and bowl cakes.
+            Happiness in every bite.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/noumeer_delights/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918976108492" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="index.html#menu"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+            <li><a href="index.html#order"><i class="fas fa-chevron-right"></i> Order Now</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer__heading">Blog Articles</h4>
+          <ul class="footer__links">
+            <li><a href="blog-1.html"><i class="fas fa-chevron-right"></i> Storage Tips</a></li>
+            <li><a href="blog-2.html"><i class="fas fa-chevron-right"></i> Brownie vs Cake Bowl</a></li>
+            <li><a href="blog-3.html"><i class="fas fa-chevron-right"></i> Dessert Pairing Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer__heading">Contact</h4>
+          <ul class="footer__contact-list">
+            <li><i class="fas fa-map-marker-alt"></i><span>Byculla (West), Mumbai 400027</span></li>
+            <li><i class="fas fa-phone-alt"></i><a href="tel:+918976108492">+91 89761 08492</a></li>
+            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/918976108492" target="_blank" rel="noopener">Chat
+                on WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Noumeer Delights. All rights reserved. Made with ❤️ in Mumbai.</p>
+        <div class="footer__legal">
+          <a href="privacy.html">Privacy Policy</a><span>·</span>
+          <a href="contact.html">Contact</a><span>·</span>
+          <a href="blog.html">Blog</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918976108492" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    title="Chat with us on WhatsApp" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Order Now!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
