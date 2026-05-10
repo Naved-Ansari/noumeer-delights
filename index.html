@@ -25,8 +25,8 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <!-- <meta name="google-adsense-account" content="ca-pub-5280450192365067"> -->
-      <title>Opening Soon | Noumeer Delights</title>
-      <meta name="description" content="Noumeer Delights is opening soon! Premium homemade brownies & bowl cakes.">
+      <title>Our Website is Coming Soon | Noumeer Delights</title>
+      <meta name="description" content="Noumeer Delights – Premium homemade brownies & bowl cakes. Our website is launching soon. To place an order, follow us on Instagram @noumeer_delights.">
       <!-- Google Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -152,42 +152,52 @@
          font-weight: 300;
          line-height: 1.6;
          }
-         /* Countdown */
-         .countdown {
-         display: flex;
-         justify-content: center;
-         gap: 1.5rem;
-         margin-bottom: 3rem;
+         /* Instagram CTA Card */
+         .insta-cta {
+         background: linear-gradient(135deg, rgba(131,58,180,0.15) 0%, rgba(253,29,29,0.1) 50%, rgba(252,176,69,0.15) 100%);
+         border: 1px solid rgba(212, 163, 115, 0.25);
+         border-radius: 16px;
+         padding: 1.6rem 1.5rem;
+         margin-bottom: 2rem;
          }
-         .time-box {
-         display: flex;
-         flex-direction: column;
+         .insta-cta p {
+         font-size: 0.95rem;
+         color: #ccc;
+         line-height: 1.6;
+         margin-bottom: 1rem;
+         }
+         .insta-handle {
+         display: inline-flex;
          align-items: center;
-         background: rgba(255, 255, 255, 0.05);
-         border: 1px solid rgba(255, 255, 255, 0.1);
-         border-radius: 12px;
-         padding: 1rem;
-         min-width: 80px;
-         transition: transform 0.3s ease, border-color 0.3s ease;
+         gap: 10px;
+         background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+         color: #fff;
+         font-weight: 600;
+         font-size: 1rem;
+         padding: 0.75rem 1.75rem;
+         border-radius: 50px;
+         text-decoration: none;
+         transition: transform 0.25s ease, box-shadow 0.25s ease;
+         letter-spacing: 0.3px;
          }
-         .time-box:hover {
-         transform: translateY(-5px);
-         border-color: var(--primary);
+         .insta-handle:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 10px 28px rgba(131,58,180,0.4);
+         }
+         .coming-soon-badge {
+         display: inline-flex;
+         align-items: center;
+         gap: 8px;
          background: rgba(212, 163, 115, 0.1);
-         }
-         .time {
-         font-family: 'Fraunces', serif;
-         font-size: 2.5rem;
-         font-weight: 700;
-         color: var(--primary);
-         line-height: 1;
-         }
-         .label {
-         font-size: 0.75rem;
+         border: 1px solid rgba(212, 163, 115, 0.3);
+         border-radius: 50px;
+         padding: 5px 16px;
+         font-size: 0.72rem;
+         letter-spacing: 2.5px;
          text-transform: uppercase;
-         letter-spacing: 2px;
-         margin-top: 0.5rem;
-         color: #999;
+         color: var(--primary);
+         margin-top: 1.5rem;
+         margin-bottom: 1.2rem;
          }
          /* Waitlist Form */
          .waitlist-text {
@@ -398,37 +408,16 @@
                <img src="assets/images/logo.png" alt="Logo" onerror="this.style.display='none'">
                <span>Noumeer <em>Delights</em></span>
             </div>
-            <h1 class="title">Opening Soon!</h1>
-            <p class="subtitle">Freshly baked goodness is on its way from Noumeer Delights. Happiness is almost ready.</p>
-            <!-- Countdown Timer -->
-            <div class="countdown" id="countdown">
-               <div class="time-box">
-                  <span class="time" id="days">00</span>
-                  <span class="label">Days</span>
-               </div>
-               <div class="time-box">
-                  <span class="time" id="hours">00</span>
-                  <span class="label">Hours</span>
-               </div>
-               <div class="time-box">
-                  <span class="time" id="mins">00</span>
-                  <span class="label">Mins</span>
-               </div>
-               <div class="time-box">
-                  <span class="time" id="secs">00</span>
-                  <span class="label">Secs</span>
-               </div>
+            <div class="coming-soon-badge"><i class="fas fa-clock"></i> Website Coming Soon</div>
+            <h1 class="title">Happiness in<br><em>Every Bite</em></h1>
+            <p class="subtitle">Noumeer Delights crafts indulgent homemade brownies & bowl cakes — each one a small luxury, made with intention. Something beautiful is baking online too.</p>
+            <!-- Instagram Order CTA -->
+            <div class="insta-cta">
+               <p><i class="fas fa-shopping-basket" style="color:var(--primary);margin-right:6px;"></i> To place an order, simply follow us on Instagram and send us a DM — we'd love to bake for you!</p>
+               <a href="https://www.instagram.com/noumeer_delights/" target="_blank" class="insta-handle" id="insta-order-btn">
+                  <i class="fab fa-instagram"></i> @noumeer_delights
+               </a>
             </div>
-            <!-- Waitlist Form -->
-            <form class="notify-form" id="notifyForm">
-               <p class="waitlist-text"><i class="fas fa-gem" style="color:var(--primary); margin-right:5px;"></i> Join the
-                  waitlist for exclusive launch offers !
-               </p>
-               <div style="position: relative;">
-                  <input type="email" name="email" class="notify-input" placeholder="Enter your email address" required>
-                  <button type="submit" class="notify-btn">Join Now</button>
-               </div>
-            </form>
             <!-- Socials -->
             <div class="social-links">
                <a href="https://www.instagram.com/noumeer_delights/" target="_blank" aria-label="Instagram"><i
@@ -438,30 +427,6 @@
          </div>
       </div>
       <script>
-         // --- Countdown Timer Logic ---
-         // Set your exact opening date and time here
-         const launchDate = new Date("May 15, 2026 10:00:00").getTime();
-         
-         
-         function updateCountdown() {
-           const now = new Date().getTime();
-           const distance = launchDate - now;
-         
-           if (distance < 0) return; // Stop if passed
-         
-           const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-           const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-           const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-           const secs = Math.floor((distance % (1000 * 60)) / 1000);
-         
-           document.getElementById('days').innerText = String(days).padStart(2, '0');
-           document.getElementById('hours').innerText = String(hours).padStart(2, '0');
-           document.getElementById('mins').innerText = String(mins).padStart(2, '0');
-           document.getElementById('secs').innerText = String(secs).padStart(2, '0');
-         }
-         
-         setInterval(updateCountdown, 1000);
-         updateCountdown();
          
          // --- Particle Animation ---
          const particlesContainer = document.getElementById('particles');
