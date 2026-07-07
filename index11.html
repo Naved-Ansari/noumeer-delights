@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noumeer Delights | Happiness in Every Bite — Premium Cloud Kitchen, Mumbai</title>
+  <meta name="description"
+    content="Noumeer Delights — Mumbai's finest home-based cloud kitchen. Custom Cakes, Artisan Brownies, Bento Cakes, Bowl Cakes & Cookie Tins. Order fresh, delivered with love. Byculla, Mumbai.">
+  <meta name="keywords"
+    content="custom cake Mumbai, brownies Mumbai, bento cake, bowl cake, cookie tin, cloud kitchen Mumbai, Noumeer Delights, dessert delivery Byculla">
+  <meta name="author" content="Noumeer Delights">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.noumeer.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Noumeer Delights | Happiness in Every Bite">
+  <meta property="og:description"
+    content="Premium homemade cakes, brownies & desserts from Mumbai's favourite cloud kitchen. Order now via WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.noumeer.com/">
+  <meta property="og:image" content="assets/images/logo.png">
+
+  <!-- Google AdSense Account Verification -->
+  <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== SCROLL PROGRESS BAR ===== -->
+  <div id="scroll-progress"></div>
+
+  <!-- ===== COOKIE CONSENT BANNER ===== -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <div class="cookie-inner">
+      <div class="cookie-text">
+        <i class="fas fa-cookie-bite cookie-icon"></i>
+        <p>We use cookies to enhance your experience, analyze site traffic, and serve relevant ads via Google AdSense.
+          By clicking <strong>Accept</strong>, you consent to our use of cookies as described in our <a
+            href="privacy.html">Privacy Policy</a>.</p>
+      </div>
+      <div class="cookie-actions">
+        <button id="cookie-decline" class="cookie-btn cookie-btn--outline">Decline</button>
+        <button id="cookie-accept" class="cookie-btn cookie-btn--primary">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PRELOADER ===== -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-cupcakes">
+        <img src="assets/images/cupcake_loader.png" alt="cupcake loader" class="cupcake">
+        <img src="assets/images/cupcake_loader.png" alt="cupcake loader" class="cupcake">
+        <img src="assets/images/cupcake_loader.png" alt="cupcake loader" class="cupcake">
+      </div>
+      <img src="assets/images/logo.png" alt="Noumeer Delights" class="preloader-logo"
+        onerror="this.style.display='none'">
+      <p class="preloader-brand">Noumeer <em>Delights</em></p>
+      <p class="preloader-tagline">Happiness in every bite</p>
+    </div>
+  </div>
+
+  <!-- ===== HEADER & NAV ===== -->
+  <header class="header" id="main-header">
+    <a href="#home" class="brand-logo">
+      <img src="assets/images/logo.png" alt="Noumeer Delights Logo" class="logo-img">
+      <span class="brand-name">Noumeer <em>Delights</em></span>
+    </a>
+
+    <div class="header-right">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#order" class="nav-cta-btn">Order Now</a></li>
+      </ul>
+
+      <div class="header-controls">
+        <div class="menu-toggle" id="mobile-menu" aria-label="Toggle mobile menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Backdrop -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-particles" id="hero-particles"></div>
+
+    <!-- Hero Background Carousel -->
+    <div class="hero-bg-slider">
+      <div class="hero-bg-slide active" style="background-image: url('assets/images/Custom Cake/Fruit Cake.jpg')">
+      </div>
+      <div class="hero-bg-slide" style="background-image: url('assets/images/Brownie/Nutty Nutela.png')"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/images/Custom Cake/Father.png')"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/images/Bowl Cake/Dubai Delights.png')"></div>
+      <div class="hero-bg-slide" style="background-image: url('assets/images/Mini Tin/Mini Tin 1.jpeg')"></div>
+    </div>
+    <div class="hero-bg-overlay"></div>
+
+    <div class="hero-content-center">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i> Mumbai's Favourite Cloud Kitchen
+      </div>
+      <h1>Happiness in<br><em>Every Bite</em></h1>
+      <p>Custom Cakes · Brownies · Bento Cakes · Bowl Cakes · Cookie Tins<br>
+        Crafted fresh, baked with love, delivered to your door.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">Explore Menu <i class="fas fa-arrow-right"></i></a>
+        <a href="#order" class="btn btn-ghost">Order Now <i class="fab fa-whatsapp"></i></a>
+      </div>
+      <div class="hero-micro-stats">
+        <span><i class="fas fa-fire"></i> Baked Fresh Daily</span>
+        <span><i class="fas fa-heart"></i> 100% Homemade</span>
+        <span><i class="fas fa-leaf"></i> Eggless Options</span>
+        <span><i class="fas fa-shield-alt"></i> FSSAI Certified</span>
+      </div>
+    </div>
+
+    <!-- Hero Slide Indicators -->
+    <div class="hero-dots">
+      <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+      <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+      <button class="hero-dot" data-slide="4" aria-label="Slide 5"></button>
+    </div>
+  </section>
+
+  <!-- ===== STATS TRUST BAR ===== -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+        <p>Successful Order</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="5">0</span><span class="stat-plus"></span>
+        <p>Signature Categories</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="0">0</span><span class="stat-plus"></span>
+        <p>Preservatives Added</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+        <p>Freshly Baked</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-tag">Our Story</span>
+      <h2 class="section-title">Baked with Love<br><em>from Our Home to Yours</em></h2>
+    </div>
+
+    <div class="about-overlap-grid">
+      <div class="about-img-box reveal">
+        <img src="assets/images/Custom Cake/Fruit Cake.jpg" alt="Fresh fruit cake by Noumeer Delights" class="about-img"
+          loading="lazy">
+        <div class="about-img-badge">
+          <i class="fas fa-home"></i>
+          <span>Home Kitchen</span>
+        </div>
+      </div>
+
+      <div class="about-text glass-chip reveal">
+        <h2>Crafted with Passion, Baked with Love</h2>
+        <p>Noumeer Delights was born from a passion for creating handcrafted desserts that bring people together and
+          make every celebration unforgettable. As a home-based cloud kitchen in Mumbai, we specialize in custom cakes,
+          brownies, bento cakes, bowl cakes, cheesecakes, cookies, and thoughtfully curated dessert boxes—each made to
+          match your taste, style, and occasion.</p>
+        <p>We believe that great desserts begin with premium ingredients, careful craftsmanship, and a personal touch.
+          That's why every order is freshly baked, made without preservatives, and customized to your preferences.
+          Whether you're celebrating life's biggest milestones or simply satisfying a sweet craving, every bite is
+          prepared with the same dedication to quality, freshness, and flavor.</p>
+        <p>At Noumeer Delights, we're not just baking desserts—we're creating moments of joy, one delicious bite at a
+          time.</p>
+        <p>Happiness in every bite.</p>
+
+        <div class="features">
+          <div class="feature-item"><i class="fas fa-check-circle"></i> 100% Home-Made</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> Baked Fresh & Stocked Daily</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> Premium Belgian Chocolate</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> FSSAI Certified Kitchen</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> Eggless Options Available</div>
+          <div class="feature-item"><i class="fas fa-check-circle"></i> Contactless Delivery</div>
+        </div>
+
+        <a href="contact.html" class="btn btn-outline" style="margin-top: 2rem; display:inline-flex;">Get in Touch <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU SECTION ===== -->
+  <section id="menu" class="section menu">
+    <div class="section-header">
+      <span class="section-tag">Our Menu</span>
+      <h2 class="section-title">Our Indulgent <em>Creations</em></h2>
+      <p class="section-subtitle">Five irresistible categories — each baked fresh daily with premium ingredients.</p>
+    </div>
+
+    <!-- Category Tabs -->
+    <div class="menu-tabs-wrapper">
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-category="custom-cake" id="tab-custom-cake">
+          <i class="fas fa-birthday-cake"></i>
+          <span>Custom Cake</span>
+        </button>
+        <button class="menu-tab" data-category="brownie" id="tab-brownie">
+          <i class="fas fa-cookie"></i>
+          <span>Brownie</span>
+        </button>
+        <button class="menu-tab" data-category="bento" id="tab-bento">
+          <i class="fas fa-jelly-fill fa-regular fa-box"></i>
+          <span>Bento</span>
+        </button>
+        <button class="menu-tab" data-category="bowl-cake" id="tab-bowl-cake">
+          <i class="fas fa-duotone fa-regular fa-bowl-food"></i>
+          <span>Bowl Cake</span>
+        </button>
+        <button class="menu-tab" data-category="cookie-tin" id="tab-cookie-tin">
+          <i class="fas fa-cookie-bite"></i>
+          <span>Cookie Tin</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== CUSTOM CAKE PANEL ===== -->
+    <div class="menu-panel active" id="panel-custom-cake">
+      <div class="menu-panel-hero">
+        <div class="menu-panel-hero-text">
+          <h3>Custom <em>Cakes</em></h3>
+          <p>Every celebration deserves a showstopper. We design and bake custom cakes tailored to your theme — from
+            birthdays and anniversaries to weddings and themed parties.</p>
+          <ul class="menu-panel-features">
+            <li><i class="fas fa-palette"></i> Any theme, any design</li>
+            <li><i class="fas fa-weight-hanging"></i> Starting from 500g</li>
+            <li><i class="fas fa-leaf"></i> Eggless options available</li>
+            <li><i class="fas fa-phone"></i> WhatsApp to customise</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Order Custom Cake <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="menu-panel-hero-img">
+          <img src="assets/images/Custom Cake/Birthday Cake 1.png" alt="Custom Birthday Cake" loading="lazy">
+        </div>
+      </div>
+
+      <div class="menu-theme-grid">
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Birthday Cake 2.png" alt="Birthday Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Birthday Cakes</h4>
+            <p>Vibrant, personalised birthday cakes for every age.</p>
+          </div>
+        </div>
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Anniversary.jpeg" alt="Anniversary Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Anniversary Cakes</h4>
+            <p>Elegant designs to celebrate your special milestones.</p>
+          </div>
+        </div>
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Engagement.png" alt="Engagement Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Engagement Cakes</h4>
+            <p>Romantic tiers and floral designs for the big moment.</p>
+          </div>
+        </div>
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Cricket Theme Cake.png" alt="Cricket Theme Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Theme Cakes</h4>
+            <p>Sports, fantasy, pop culture — any theme comes to life.</p>
+          </div>
+        </div>
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Princess Theme.jpeg" alt="Princess Theme Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Princess Theme</h4>
+            <p>Dreamy, whimsical designs for little royals.</p>
+          </div>
+        </div>
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Bouquet.png" alt="Bouquet Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Bouquet Cakes</h4>
+            <p>Stunning floral arrangements crafted entirely from icing.</p>
+          </div>
+        </div>
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Red Velvet 1.png" alt="Red Velvet Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Red Velvet Cake</h4>
+            <p>Classic, indulgent red velvet with cream cheese frosting.</p>
+          </div>
+        </div>
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Custom Cake/Fruit Cake.jpg" alt="Fruit Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Fruit Cakes</h4>
+            <p>Fresh seasonal fruits atop a light, moist sponge.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BROWNIE PANEL ===== -->
+    <div class="menu-panel" id="panel-brownie">
+      <div class="menu-panel-hero">
+        <div class="menu-panel-hero-text">
+          <h3>Artisan <em>Brownies</em></h3>
+          <p>Fudgy, rich, and loaded with premium chocolate. Our brownies are a Mumbai favourite — perfected over years
+            of baking with premium Belgian chocolate and zero preservatives.</p>
+          <ul class="menu-panel-features">
+            <li><i class="fas fa-chocolate-bar"></i> Premium Belgian chocolate</li>
+            <li><i class="fas fa-layer-group"></i> Single pieces to full slabs</li>
+            <li><i class="fas fa-gift"></i> Gift boxes available</li>
+            <li><i class="fas fa-leaf"></i> Eggless options available</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Order Brownies <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="menu-panel-hero-img">
+          <img src="assets/images/Brownie/Classic.png" alt="Classic Brownie" loading="lazy">
+        </div>
+      </div>
+
+      <div class="menu-theme-grid">
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Brownie/Classic.png" alt="Classic Chocolate Brownie" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Classic Brownie</h4>
+            <p>Fudgy, rich, and loaded with premium chocolate chunks. Our most-loved classic.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Brownie/Nutty Nutela.png" alt="Nutty Nutella Brownie" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Nutty Nutella Brownie</h4>
+            <p>Classic brownie elevated with generous swirls of rich hazelnut spread.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Brownie/Dubai Delight.png" alt="Dubai Delight Brownie" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Dubai Delight Brownie</h4>
+            <p>Inspired by the viral Dubai chocolate — pistachio, knafeh, and chocolate perfection.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Brownie/Bento Brownie 1.png" alt="Bento Brownie Box" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Bento Brownie Box</h4>
+            <p>A curated bento-style brownie box — perfect for gifting or indulging yourself.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Brownie/Custom Brownie Slab.png" alt="Custom Brownie Slab" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Custom Brownie Slab</h4>
+            <p>A whole slab of our signature brownie — customised with your choice of toppings.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Brownie/Nutty Nutella (9pc).png" alt="Nutty Nutella 9pc" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Nutella Box (9pc)</h4>
+            <p>Nine pieces of our Nutella brownie — the ultimate gift for any occasion.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BENTO PANEL ===== -->
+    <div class="menu-panel" id="panel-bento">
+      <div class="menu-panel-hero">
+        <div class="menu-panel-hero-text">
+          <h3>Bento <em>Cakes</em></h3>
+          <p>Adorable, compact, and totally photogenic. Our bento cakes are mini masterpieces — perfect for personal
+            celebrations, gifts, and those "just because" moments.</p>
+          <ul class="menu-panel-features">
+            <li><i class="fas fa-camera"></i> Insta-worthy designs</li>
+            <li><i class="fas fa-compress-arrows-alt"></i> Compact & personal-sized</li>
+            <li><i class="fas fa-paint-brush"></i> Custom message & design</li>
+            <li><i class="fas fa-gift"></i> Gift-ready packaging</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Order Bento Cake <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="menu-panel-hero-img">
+          <img src="assets/images/Bento/Bento2.png" alt="Bento Cake" loading="lazy">
+        </div>
+      </div>
+
+      <div class="bento-gallery-grid">
+        <div class="bento-item reveal">
+          <img src="assets/images/Bento/Bento3.png" alt="Bento Cake Design 3" loading="lazy">
+        </div>
+        <div class="bento-item reveal">
+          <img src="assets/images/Bento/Bento4.png" alt="Bento Cake Design 4" loading="lazy">
+        </div>
+        <div class="bento-item reveal">
+          <img src="assets/images/Bento/Bento5.png" alt="Bento Cake Design 5" loading="lazy">
+        </div>
+        <div class="bento-item reveal">
+          <img src="assets/images/Bento/Bento6.png" alt="Bento Cake Design 6" loading="lazy">
+        </div>
+        <div class="bento-item reveal">
+          <img src="assets/images/Bento/Bento7.png" alt="Bento Cake Design 7" loading="lazy">
+        </div>
+        <div class="bento-item reveal">
+          <img src="assets/images/Bento/Bento8.png" alt="Bento Cake Design 8" loading="lazy">
+        </div>
+        <div class="bento-item reveal">
+          <img src="assets/images/Bento/Bento9.png" alt="Bento Cake Design 9" loading="lazy">
+        </div>
+        <div class="bento-item reveal bento-cta-cell">
+          <div class="bento-cta-inner">
+            <i class="fas fa-birthday-cake"></i>
+            <h4>Want a Custom Design?</h4>
+            <p>WhatsApp us your idea and we'll bring it to life!</p>
+            <a href="#order" class="btn btn-primary btn-sm">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== BOWL CAKE PANEL ===== -->
+    <div class="menu-panel" id="panel-bowl-cake">
+      <div class="menu-panel-hero">
+        <div class="menu-panel-hero-text">
+          <h3>Bowl <em>Cakes</em></h3>
+          <p>Warm, gooey, and utterly indulgent. Our bowl cakes are the perfect dessert experience — served in a cup,
+            loaded with flavour, and ready to devour immediately.</p>
+          <ul class="menu-panel-features">
+            <li><i class="fas fa-fire"></i> Served warm & gooey</li>
+            <li><i class="fas fa-ice-cream"></i> Pairs perfectly with ice cream</li>
+            <li><i class="fas fa-bolt"></i> Ready in minutes</li>
+            <li><i class="fas fa-leaf"></i> Eggless variants available</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Order Bowl Cake <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="menu-panel-hero-img">
+          <img src="assets/images/Bowl Cake/Dubai Delights.png" alt="Dubai Delights Bowl Cake" loading="lazy">
+        </div>
+      </div>
+
+      <div class="menu-theme-grid">
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Bowl Cake/Chocolate Overloaded.jpeg" alt="Chocolate Overloaded Bowl Cake"
+              loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Chocolate Overloaded</h4>
+            <p>Warm, gooey chocolate lava cake served in a bowl — pure indulgence.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Bowl Cake/Dubai Delights.png" alt="Dubai Delights Bowl Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Dubai Delights</h4>
+            <p>Inspired by the viral Dubai chocolate — pistachio cream, knafeh crunch in a bowl.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Bowl Cake/Hazelnut Heaven.png" alt="Hazelnut Heaven Bowl Cake" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Hazelnut Heaven</h4>
+            <p>Velvety hazelnut spread meets a moist chocolate sponge in this divine bowl cake.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Bowl Cake/kitkat Cake Bowl.jpeg" alt="KitKat Cake Bowl" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>KitKat Cake Bowl</h4>
+            <p>Crunchy KitKat wafers folded into a soft, moist cake bowl with chocolate drizzle.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Bowl Cake/Cake Bowls.jpeg" alt="Assorted Cake Bowls" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Assorted Cake Bowl Set</h4>
+            <p>A selection of our favourite bowl cakes — perfect for sharing or gifting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== COOKIE TIN PANEL ===== -->
+    <div class="menu-panel" id="panel-cookie-tin">
+      <div class="menu-panel-hero">
+        <div class="menu-panel-hero-text">
+          <h3>Cookie <em>Tins</em></h3>
+          <p>Our gorgeous mini tins are filled with freshly baked cookies — the perfect gift for any occasion. Beautiful
+            packaging, premium flavours, and artisan quality in every tin.</p>
+          <ul class="menu-panel-features">
+            <li><i class="fas fa-box"></i> Premium mini tin packaging</li>
+            <li><i class="fas fa-gift"></i> Ready to gift</li>
+            <li><i class="fas fa-cookie"></i> Multiple flavours</li>
+            <li><i class="fas fa-truck"></i> Delivery available</li>
+          </ul>
+          <a href="#order" class="btn btn-primary">Order Cookie Tin <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="menu-panel-hero-img">
+          <img src="assets/images/Mini Tin/Mini Tin 1.jpeg" alt="Cookie Tin" loading="lazy">
+        </div>
+      </div>
+
+      <div class="menu-theme-grid">
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Mini Tin/Mini Tin 2.jpeg" alt="Cookie Tin 2" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Chocolate Chip Tin</h4>
+            <p>Classic, buttery chocolate chip cookies packed in our signature mini tin.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Mini Tin/Mini Tin 3.jpeg" alt="Cookie Tin 3" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Nutella Stuffed Tin</h4>
+            <p>Artisan cookies stuffed with creamy hazelnut spread in a premium tin.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Mini Tin/Mini Tin 4.jpeg" alt="Cookie Tin 4" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Belgian Chocolate Tin</h4>
+            <p>Decadent cookies made with premium Belgian chocolate pieces.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Mini Tin/Mini Tin 5.jpeg" alt="Cookie Tin 5" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Assorted Mix Tin</h4>
+            <p>A delicious assortment of our finest cookie flavours in one special tin.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal">
+          <div class="menu-theme-img-wrap">
+            <img src="assets/images/Mini Tin/Mini Tin 6.jpeg" alt="Cookie Tin 6" loading="lazy">
+          </div>
+          <div class="menu-theme-info">
+            <h4>Premium Gift Tin</h4>
+            <p>The ultimate cookie gift set — beautifully presented and ready to share.</p>
+          </div>
+        </div>
+
+        <div class="menu-theme-card reveal bento-cta-cell"
+          style="background: linear-gradient(135deg, var(--primary), #3D2515); display: flex; align-items: center; justify-content: center; height: 100%; border: none;">
+          <div class="bento-cta-inner" style="padding: 2rem 1.5rem; text-align: center; color: #fff;">
+            <i class="fas fa-gift" style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--accent);"></i>
+            <h4 style="color: #fff; margin-bottom: 0.5rem;">Custom Tin Orders</h4>
+            <p style="font-size: 0.88rem; color: rgba(255,255,255,0.8); margin-bottom: 1.25rem; line-height: 1.5;">
+              Personalised tins for corporate gifting, weddings & events.</p>
+            <a href="#order" class="btn btn-primary btn-sm">WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-cta-row">
+      <a href="#order" class="btn btn-primary">Order Your Favourites <i class="fab fa-whatsapp"
+          style="font-family:'Font Awesome 6 Brands'; font-weight:400;"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section id="why-us" class="section why-section">
+    <div class="section-header">
+      <span class="section-tag">Why Us</span>
+      <h2 class="section-title">Why Choose <em>Noumeer Delights?</em></h2>
+      <p class="section-subtitle">We don't just make desserts. We craft experiences.</p>
+    </div>
+
+    <div class="why-us-grid">
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-home"></i></div>
+        <div class="why-card-content">
+          <h3>100% Homemade</h3>
+          <p>Crafted in a certified home kitchen ensuring every single batch is made with personal care, passion, and
+            love. No factory shortcuts, ever.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-fire-burner"></i></div>
+        <div class="why-card-content">
+          <h3>Freshly Baked Daily</h3>
+          <p>We bake fresh every single day and maintain a ready stock of our bestsellers. Every item is verified for
+            freshness, so you get that straight-from-the-oven bliss with every bite.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-hands-bubbles"></i></div>
+        <div class="why-card-content">
+          <h3>Hygienic Preparation</h3>
+          <p>Cleanliness is our non-negotiable priority. Our kitchen is FSSAI-aware and follows the highest food safety
+            and hygiene standards.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-tags"></i></div>
+        <div class="why-card-content">
+          <h3>Affordable Luxury</h3>
+          <p>Premium quality desserts shouldn't cost a fortune. We believe in bringing you gourmet flavours at prices
+            that make sense.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-leaf"></i></div>
+        <div class="why-card-content">
+          <h3>Eggless Options</h3>
+          <p>We care about everyone's dietary choices. Our full menu is available in eggless variants, without
+            compromising taste or texture.</p>
+        </div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon"><i class="fas fa-box-open"></i></div>
+        <div class="why-card-content">
+          <h3>Beautiful Packaging</h3>
+          <p>Perfect for gifting! Our desserts come in premium, Insta-worthy packaging that makes every order feel like
+            a special occasion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AD SLOT 2 — IN-CONTENT RECTANGLE ===== -->
+  <div class="ad-container ad-content">
+    <p class="ad-label">Advertisement</p>
+    <ins class="adsbygoogle"
+      style="display:block; width:100%; text-align:center; min-height:120px; background:transparent;"
+      data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+      data-ad-slot="XXXXXXXXXX">
+    </ins>
+  </div>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery" class="section gallery">
+    <div class="section-header">
+      <span class="section-tag">Gallery</span>
+      <h2 class="section-title">Visual <em>Delights</em></h2>
+      <p class="section-subtitle">Feast your eyes before you feast your taste buds.</p>
+    </div>
+
+    <div class="masonry-gallery-grid">
+      <div class="gallery-item item-large reveal">
+        <img src="assets/images/Custom Cake/Red Velvet 1.png" alt="Red Velvet Custom Cake" class="gallery-img"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Red Velvet Custom Cake</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/Brownie/Dubai Delight.png" alt="Dubai Delight Brownie" class="gallery-img"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Dubai Delight Brownie</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/Bento/Bento1.jpeg" alt="Bento Cake" class="gallery-img" loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Bento Cake</span>
+        </div>
+      </div>
+
+      <div class="gallery-item item-wide reveal">
+        <img src="assets/images/Bowl Cake/Dubai Delights.png" alt="Dubai Delights Bowl Cake" class="gallery-img"
+          loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Dubai Delights Bowl Cake</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/Mini Tin/Mini Tin 1.jpeg" alt="Cookie Tin Gift Box" class="gallery-img" loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Cookie Tin Gift</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/Custom Cake/Bouquet.png" alt="Bouquet Cake" class="gallery-img" loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Bouquet Cake</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/Brownie/Brownie Cake.jpeg" alt="Brownie Cake" class="gallery-img" loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Brownie Cake</span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal">
+        <img src="assets/images/Bento/Bento4.png" alt="Bento Cake" class="gallery-img" loading="lazy">
+        <div class="gallery-overlay">
+          <i class="fab fa-instagram gallery-icon"></i>
+          <span class="gallery-caption">Bento Celebration</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-instagram-cta reveal">
+      <a href="https://www.instagram.com/noumeer_delights/" target="_blank" rel="noopener noreferrer"
+        class="btn btn-instagram">
+        Follow us<i class="fab fa-instagram"></i>noumeer_delights
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section">
+    <div class="section-header">
+      <span class="section-tag">Reviews</span>
+      <h2 class="section-title">What Our Customers <em>Say</em></h2>
+      <p class="section-subtitle">Don't take our word for it — hear from those who've tasted the magic.</p>
+    </div>
+
+    <div class="testimonials-scroll">
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Absolutely loved the brownies! They were rich, fudgy, and incredibly delicious
+          honestly even better than many store bought ones. I had ordered brownies from Theobroma a few days later and
+          in comparison, they felt quite dry....these brownies by Noumeer Delights were moist, fresh and full of
+          flavor highly recommended"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SA</div>
+          <div class="author-info">
+            <h4>Saniya Ansari</h4>
+            <span>Verified Customer · Andheri, Mumbai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Loved the Red Velvet Cake from Noumeer Delights! It was smooth, fresh and
+          delicious.... Definitely worth trying!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SA</div>
+          <div class="author-info">
+            <h4>Saima Ansari</h4>
+            <span>Verified Customer · Andheri, Mumbai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"The personalized cake from Noumeer Delights was absolutely incredible! Not only was
+          the presentation stunning, but the taste was also phenomenal. The best part of the experience was watching
+          them take our thoughts and ideas and truly bring them to life. This unique, creative process made the entire
+          celebration so much more special. If you want a cake that looks like a masterpiece and tastes like heaven,
+          this is the place!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">FA</div>
+          <div class="author-info">
+            <h4>Fauzia Ansari</h4>
+            <span>Regular Customer · Agripada, Mumbai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"I recently ordered two cakes, and they were absolutely amazing! Both looked
+          beautiful and tasted even better. The cakes were fresh, soft, perfectly balanced in sweetness, and made with
+          great attention to detail. Everyone at our celebration loved them and kept asking where they were from.
+
+          The service was excellent, and the order was delivered exactly as promised and one of them was on really short
+          notice but she made sure it was sent on time . I highly recommend this to anyone looking for delicious,
+          beautifully customized cakes made with care. I’ll definitely be ordering again!"
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">AA</div>
+          <div class="author-info">
+            <h4>Ayesha Abdul Mughni Ansari</h4>
+            <span>Regular Customer · Byculla, Mumbai</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Thank you Noumeer Delights for this super cute bento cake... It was perfectly soft
+          and creamy... Kids loved it very much..."
+        </p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MS</div>
+          <div class="author-info">
+            <h4>Mehnaz Sayed</h4>
+            <span>Verified Customer · Nagpada, Mumbai</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG PREVIEW ===== -->
+  <section class="section blog-preview-section">
+    <div class="section-header">
+      <span class="section-tag">From the Kitchen</span>
+      <h2 class="section-title">Baking Tips &amp; <em>Sweet Stories</em></h2>
+      <p class="section-subtitle">Explore our blog for dessert tips, recipes, and kitchen secrets.</p>
+    </div>
+
+    <div class="blog-preview-grid">
+      <article class="blog-card reveal">
+        <div class="blog-card-img-wrap">
+          <img src="assets/images/Brownie/Classic.png" alt="How to store brownies to keep them fresh"
+            class="blog-card-img" loading="lazy">
+          <span class="blog-tag">Storage Tips</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-date"><i class="far fa-calendar-alt"></i> March 15, 2026</span>
+          <h3>How to Keep Your Brownies Fresh for Days</h3>
+          <p>Discover the best ways to store homemade brownies so they stay fudgy and delicious for up to a week without
+            losing their magic.</p>
+          <a href="blog-1.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img-wrap">
+          <img src="assets/images/Bowl Cake/Chocolate Overloaded.jpeg" alt="Brownie vs Cake Bowl — which is better?"
+            class="blog-card-img" loading="lazy">
+          <span class="blog-tag">Dessert Guide</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-date"><i class="far fa-calendar-alt"></i> March 22, 2026</span>
+          <h3>Brownie vs. Cake Bowl: Which One Should You Order?</h3>
+          <p>Can't decide between a fudgy brownie and a molten cake bowl? We break down the differences to help you pick
+            your perfect indulgence.</p>
+          <a href="blog-2.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="blog-card reveal">
+        <div class="blog-card-img-wrap">
+          <img src="assets/images/Bento/Bento2.png" alt="Guide to perfect bento cakes" class="blog-card-img"
+            loading="lazy">
+          <span class="blog-tag">Expert Tips</span>
+        </div>
+        <div class="blog-card-body">
+          <span class="blog-date"><i class="far fa-calendar-alt"></i> April 1, 2026</span>
+          <h3>The Ultimate Guide to Pairing Chocolate Desserts</h3>
+          <p>From hot beverages to ice creams, learn how to pair your brownies and bowl cakes for an elevated dessert
+            experience at home.</p>
+          <a href="blog-3.html" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center; margin-top: 3rem;">
+      <a href="blog.html" class="btn btn-outline">View All Articles <i class="fas fa-book-open"></i></a>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION ===== -->
+  <section class="section faq-section">
+    <div class="section-header">
+      <span class="section-tag">FAQs</span>
+      <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+      <p class="section-subtitle">Everything you need to know before placing your order.</p>
+    </div>
+
+    <div class="faq-list" id="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What items do you sell?</span>
+          <i class="fas fa-plus faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>We offer five delicious categories: Custom Cakes (any theme!), Artisan Brownies (classic, Nutella, Dubai
+            Delight), Bento Cakes (mini personalised cakes), Bowl Cakes (warm gooey desserts in a cup), and Cookie Tins
+            (perfect for gifting). All made fresh daily!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you offer eggless options?</span>
+          <i class="fas fa-plus faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Our entire menu is available in eggless variants. Just mention your preference in the special request
+            field when ordering via WhatsApp. The taste and texture remain absolutely divine.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do I order a Custom Cake?</span>
+          <i class="fas fa-plus faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Custom cakes require at least 48–72 hours advance notice. Please WhatsApp us with your desired theme,
+            flavour, size, and date. We'll send you design options and a price quote. A 50% advance is required to
+            confirm your order.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>How long does delivery take?</span>
+          <i class="fas fa-plus faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Since we maintain a fresh daily stock of our favorites, delivery typically takes 30 to 60 minutes
+            within our primary delivery zones once your order is confirmed. For custom or large orders, we'll provide a
+            specific estimate via WhatsApp.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do you do bulk or gift orders?</span>
+          <i class="fas fa-plus faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! We love special occasions. For bulk orders (10+ items), corporate gifting, birthdays, or
+            wedding favours, please WhatsApp us directly for custom pricing and packaging options. Our Cookie Tins are a
+            particularly popular gifting choice!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Which areas in Mumbai do you deliver to?</span>
+          <i class="fas fa-plus faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>We are based in Byculla (West), Mumbai, and currently deliver within a 2 km radius. Contact us on WhatsApp
+            with your location to confirm delivery availability.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>What payment methods do you accept?</span>
+          <i class="fas fa-plus faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>We accept UPI (Google Pay, PhonePe, Paytm), bank transfers, and cash on delivery for local orders. Full
+            payment is required upfront for new customers to confirm the order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDER SECTION ===== -->
+  <section id="order" class="section order-section">
+    <div class="section-header">
+      <span class="section-tag">Order Now</span>
+      <h2 class="section-title">Place Your <em>Order</em></h2>
+      <p class="section-subtitle">Fill in your details and we'll take it from there via WhatsApp.</p>
+    </div>
+
+    <div class="order-wrapper glass-chip reveal">
+      <form id="orderForm" class="order-form">
+        <div class="form-group">
+          <label for="customerName"><i class="fas fa-user"></i> Your Name</label>
+          <input type="text" id="customerName" class="form-control" placeholder="E.g. Anjali Sharma" required>
+        </div>
+        <div class="form-group">
+          <label for="customerPhone"><i class="fas fa-phone"></i> Phone Number</label>
+          <input type="tel" id="customerPhone" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+        </div>
+        <div class="form-group full-width">
+          <label for="customerAddress"><i class="fas fa-map-marker-alt"></i> Delivery Address <span
+              class="required-star">*</span></label>
+          <textarea id="customerAddress" class="form-control" rows="2"
+            placeholder="Full address with building name, street, area, landmark, and pincode" required></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="customerMessage"><i class="fas fa-sticky-note"></i> Special Instructions (Optional)</label>
+          <textarea id="customerMessage" class="form-control" rows="3"
+            placeholder="Allergies, eggless request, custom cake theme, gift message, specific packaging request..."></textarea>
+        </div>
+        <div class="form-group full-width">
+          <button type="submit" class="submit-btn" id="whatsapp-order-btn">
+            <i class="fab fa-whatsapp"></i> Confirm Order via WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== AD SLOT 3 — BEFORE FOOTER ===== -->
+  <div class="ad-container ad-footer-leaderboard">
+    <p class="ad-label">Advertisement</p>
+    <ins class="adsbygoogle" style="display:block; width:100%; min-height:90px; background:transparent;"
+      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto"
+      data-full-width-responsive="true">
+    </ins>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer__top">
+        <div class="footer-col footer-col--brand">
+          <div class="footer__brand">
+            <img src="assets/images/logo.png" alt="Noumeer Delights Logo" class="footer__logo"
+              onerror="this.src='assets/images/logo.png'">
+            <h4>Noumeer Delights</h4>
+          </div>
+          <p class="footer__about">A home-based cloud kitchen dedicated to crafting premium custom cakes, brownies,
+            bento cakes, bowl cakes and cookie tins. Happiness in every bite, delivered to your doorstep.</p>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/noumeer_delights/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918976108492" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
+                class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+            <li><a href="#menu"><i class="fas fa-chevron-right"></i> Our Menu</a></li>
+            <li><a href="#why-us"><i class="fas fa-chevron-right"></i> Why Choose Us</a></li>
+            <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+            <li><a href="#order"><i class="fas fa-chevron-right"></i> Order Now</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer__heading">Our Menu</h4>
+          <ul class="footer__links">
+            <li><a href="#menu"><i class="fas fa-chevron-right"></i> Custom Cakes</a></li>
+            <li><a href="#menu"><i class="fas fa-chevron-right"></i> Brownies</a></li>
+            <li><a href="#menu"><i class="fas fa-chevron-right"></i> Bento Cakes</a></li>
+            <li><a href="#menu"><i class="fas fa-chevron-right"></i> Bowl Cakes</a></li>
+            <li><a href="#menu"><i class="fas fa-chevron-right"></i> Cookie Tins</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer__heading">Contact Us</h4>
+          <ul class="footer__contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Byculla (West), Mumbai, Maharashtra 400027</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+918976108492">+91 89761 08492</a>
+            </li>
+            <li>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/918976108492" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </li>
+            <li>
+              <i class="fab fa-instagram"></i>
+              <a href="https://www.instagram.com/noumeer_delights/" target="_blank"
+                rel="noopener noreferrer">@noumeerdelights</a>
+            </li>
+          </ul>
+          <div class="footer__hours">
+            <h5><i class="fas fa-clock"></i> Order Hours</h5>
+            <p>Mon – Sat: 10 AM – 8 PM</p>
+            <p>Sunday: 11 AM – 6 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Noumeer Delights. All rights reserved. Made with ❤️ from home in Mumbai.</p>
+        <div class="footer__legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <span>·</span>
+          <a href="contact.html">Contact</a>
+          <span>·</span>
+          <a href="blog.html">Blog</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918976108492" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    title="Chat with us on WhatsApp" aria-label="WhatsApp Chat">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Order Now!</span>
+  </a>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
