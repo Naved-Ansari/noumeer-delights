@@ -156,76 +156,143 @@ faqItems.forEach(item => {
 
 
 
-/* ===== MULTI-ITEM CART ===== */
-const orderRows = document.querySelectorAll('.order-item-row');
-const orderTotalEl = document.getElementById('orderTotal');
-let cartTotal = 0;
-
-orderRows.forEach(row => {
-  const decBtn = row.querySelector('.decrement');
-  const incBtn = row.querySelector('.increment');
-  const qtyEl = row.querySelector('.qty-count');
-
-  decBtn && decBtn.addEventListener('click', () => {
-    let qty = parseInt(qtyEl.innerText);
-    if (qty > 0) { qtyEl.innerText = --qty; updateTotal(); }
-  });
-
-  incBtn && incBtn.addEventListener('click', () => {
-    let qty = parseInt(qtyEl.innerText);
-    if (qty < 20) { qtyEl.innerText = ++qty; updateTotal(); }
-  });
-});
-
-function updateTotal() {
-  cartTotal = 0;
-  orderRows.forEach(row => {
-    const qty = parseInt(row.querySelector('.qty-count').innerText);
-    const price = parseInt(row.getAttribute('data-price'));
-    cartTotal += qty * price;
-  });
-  if (orderTotalEl) orderTotalEl.innerText = `₹${cartTotal}`;
-}
-
 /* ===== WHATSAPP ORDER SUBMIT ===== */
 const orderForm = document.getElementById('orderForm');
 if (orderForm) {
   orderForm.addEventListener('submit', e => {
     e.preventDefault();
 
-    if (cartTotal === 0) {
-      alert('Please select at least one item to order!');
-      return;
-    }
-
     const name = document.getElementById('customerName')?.value || '';
     const phone = document.getElementById('customerPhone')?.value || '';
     const address = document.getElementById('customerAddress')?.value || '';
     const message = document.getElementById('customerMessage')?.value || '';
 
-    let itemsStr = '';
-    orderRows.forEach(row => {
-      const qty = parseInt(row.querySelector('.qty-count').innerText);
-      const name = row.getAttribute('data-name');
-      const price = parseInt(row.getAttribute('data-price'));
-      if (qty > 0) itemsStr += `%0A• ${name}  x${qty} (₹${price * qty})`;
-    });
-
     const phoneNumber = '918976108492';
     const msg = [
       'Hello Noumeer Delights!%0A',
-      '*New Order Request*%0A',
+      '*New Order Inquiry*%0A',
       '------------------------%0A',
       `*Name:* ${name}%0A`,
       `*Phone:* ${phone}%0A`,
       `*Address:* ${address}%0A%0A`,
-      `*Items Ordered:*${itemsStr}%0A%0A`,
-      `*Total Amount:* ₹${cartTotal}%0A%0A`,
-      `*Special Request:* ${message || 'None'}%0A`,
+      `*Details / Inquiry:* ${message || 'I would like to order delicious desserts.'}%0A`,
       '------------------------%0A',
-      'Looking forward to my order!'
+      'Looking forward to your reply!'
     ].join('');
 
     window.open(`https://wa.me/${phoneNumber}?text=${msg}`, '_blank');
   });
 }
+
+/* ===== HERO BACKGROUND SLIDER ===== */
+const heroSlides = document.querySelectorAll('.hero-bg-slide');
+const heroDots = document.querySelectorAll('.hero-dot');
+let currentSlide = 0;
+let slideInterval = null;
+
+function goToSlide(index) {
+  heroSlides[currentSlide]?.classList.remove('active');
+  heroDots[currentSlide]?.classList.remove('active');
+  currentSlide = (index + heroSlides.length) % heroSlides.length;
+  heroSlides[currentSlide]?.classList.add('active');
+  heroDots[currentSlide]?.classList.add('active');
+}
+
+function startSlider() {
+  slideInterval = setInterval(() => goToSlide(currentSlide + 1), 5000);
+}
+
+function resetSlider() {
+  clearInterval(slideInterval);
+  startSlider();
+}
+
+if (heroSlides.length > 0) {
+  heroDots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      goToSlide(i);
+      resetSlider();
+    });
+  });
+  startSlider();
+}
+
+/* ===== HERO PARTICLES ===== */
+(function () {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const container = document.getElementById('hero-particles');
+  if (!container) return;
+
+  container.appendChild(canvas);
+  canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;';
+
+  const particles = [];
+  const PARTICLE_COUNT = 55;
+
+  function resize() {
+    canvas.width = container.offsetWidth;
+    canvas.height = container.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize, { passive: true });
+
+  for (let i = 0; i < PARTICLE_COUNT; i++) {
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 2.5 + 0.5,
+      dx: (Math.random() - 0.5) * 0.35,
+      dy: -(Math.random() * 0.5 + 0.2),
+      alpha: Math.random() * 0.5 + 0.1,
+    });
+  }
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(245, 166, 35, ${p.alpha})`;
+      ctx.fill();
+
+      p.x += p.dx;
+      p.y += p.dy;
+
+      // Reset when out of bounds
+      if (p.y < -10) { p.y = canvas.height + 10; p.x = Math.random() * canvas.width; }
+      if (p.x < -10) p.x = canvas.width + 10;
+      if (p.x > canvas.width + 10) p.x = -10;
+    });
+    requestAnimationFrame(drawParticles);
+  }
+
+  drawParticles();
+})();
+
+/* ===== MENU TABS ===== */
+const menuTabs = document.querySelectorAll('.menu-tab');
+const menuPanels = document.querySelectorAll('.menu-panel');
+
+menuTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const category = tab.getAttribute('data-category');
+
+    // Update tab active state
+    menuTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    // Update panel active state
+    menuPanels.forEach(panel => {
+      panel.classList.remove('active');
+      if (panel.id === `panel-${category}`) {
+        panel.classList.add('active');
+        // Re-trigger reveal animations for newly shown items
+        panel.querySelectorAll('.reveal').forEach(el => {
+          el.classList.remove('active');
+          setTimeout(() => el.classList.add('active'), 50);
+        });
+      }
+    });
+  });
+});
